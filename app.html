@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <title>Tasktasticc - App</title>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to Home</a>
+        <h1>Task Manager</h1>
+        <div class="task-input">
+            <input type="text" id="taskTitle" placeholder="What needs to be done?">
+            <input type="date" id="taskDueDate">
+            <input type="time" id="taskDueTime">
+            <button onclick="addTask()">Add Task</button>
+        </div>
+        <div class="task-columns">
+            <div class="task-column">
+                <h2>New Tasks</h2>
+                <div id="newTasks"></div>
+            </div>
+            <div class="task-column">
+                <h2>In Progress</h2>
+                <div id="inProgressTasks"></div>
+            </div>
+            <div class="task-column">
+                <h2>Completed Tasks</h2>
+                <div id="completedTasks"></div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
