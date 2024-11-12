@@ -313,4 +313,75 @@ body {
     .hero-image {
         width: 90%;
     }
+}
+
+/* Enhanced Mobile Navigation */
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Mobile Navigation Styles */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem 0;
+    }
+
+    .nav-content {
+        padding: 0 1rem;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .nav-links a:not(.cta-button) {
+        display: none; /* Hide regular links on mobile */
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .cta-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Add hamburger menu for very small screens */
+@media (max-width: 480px) {
+    .nav-content {
+        padding: 0 0.8rem;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .cta-button {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
+    }
+}
+
+/* Landscape mode adjustments */
+@media (max-height: 480px) and (orientation: landscape) {
+    .navbar {
+        padding: 0.8rem 0;
+    }
+
+    .nav-links {
+        gap: 0.8rem;
+    }
 } 
